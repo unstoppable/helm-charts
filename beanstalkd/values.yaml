@@ -1,4 +1,4 @@
-image: dtannock/beanstalkd:1.10
+image: dtannock/beanstalkd:1.12
 imagePullPolicy: IfNotPresent
 
 replicaCount: 1
