@@ -8,8 +8,9 @@ metadata:
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"
 spec:
+  storageClassName: gp2
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: {{ .Values.beanstalkd.binlogSize | quote }}
+      storage: 50MB
