@@ -3,6 +3,26 @@ entries:
   beanstalkd:
   - apiVersion: v1
     appVersion: "1.12"
+    created: "2020-12-31T11:59:26.704552892Z"
+    description: Beanstalk is a simple, fast work queue.
+    digest: d4985276b2f86f549596419d98ff4cda8febb3231bd06a0cebbbe043844741fa
+    home: http://kr.github.io/beanstalkd/
+    keywords:
+    - beanstalkd
+    - queue
+    - prometheus
+    - metrics
+    maintainers:
+    - name: David Tannock
+    name: beanstalkd
+    sources:
+    - https://github.com/davidtannock/docker-beanstalkd
+    - https://github.com/davidtannock/beanstalkd_exporter
+    urls:
+    - https://github.com/unstoppable/helm-charts/releases/download/beanstalkd-1.1.4/beanstalkd-1.1.4.tgz
+    version: 1.1.4
+  - apiVersion: v1
+    appVersion: "1.12"
     created: "2020-12-31T10:51:04.080275885Z"
     description: Beanstalk is a simple, fast work queue.
     digest: 555445804871ab58dc4b82ef1aa7197000c774d4fb73d51c2fcf3f3faad46767
