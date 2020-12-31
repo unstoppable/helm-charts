@@ -26,15 +26,6 @@ spec:
         app.kubernetes.io/name: {{ include "clickhouse.name" . }}-tabix
         app.kubernetes.io/instance: {{ .Release.Name }}-tabix
     spec: 
-    {{- if .Values.affinity }}
-      affinity:
-{{ toYaml .Values.affinity | indent 8 }}
-    {{- end }}
-    {{- if .Values.tabix.imagePullSecrets }}
-      imagePullSecrets:
-    {{- range .Values.tabix.imagePullSecrets }}
-      - name: {{ . | quote }}
-    {{- end }}
       containers: 
       - name: {{ include "clickhouse.name" . }}-tabix
         image: {{ .Values.tabix.image }}:{{ .Values.tabix.imageVersion }}
