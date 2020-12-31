@@ -1,4 +1,4 @@
-image: dtannock/beanstalkd:1.12
+image: docker.starscape.live/cicd/beanstalkd
 imagePullPolicy: IfNotPresent
 
 replicaCount: 1
