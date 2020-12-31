@@ -1,6 +1,47 @@
 apiVersion: v1
 entries:
+  beanstalkd:
+  - apiVersion: v1
+    appVersion: "1.12"
+    created: "2020-12-31T08:28:53.390494672Z"
+    description: Beanstalk is a simple, fast work queue.
+    digest: 1fd75ae6c8a851b5e469d513832b6360fa432188ad954b863dc1a1d29caf079f
+    home: http://kr.github.io/beanstalkd/
+    keywords:
+    - beanstalkd
+    - queue
+    - prometheus
+    - metrics
+    maintainers:
+    - name: David Tannock
+    name: beanstalkd
+    sources:
+    - https://github.com/davidtannock/docker-beanstalkd
+    - https://github.com/davidtannock/beanstalkd_exporter
+    urls:
+    - https://github.com/unstoppable/helm-charts/releases/download/beanstalkd-1.1.2/beanstalkd-1.1.2.tgz
+    version: 1.1.2
   clickhouse:
+  - apiVersion: v1
+    appVersion: "19.14"
+    created: "2020-12-31T08:28:53.608544501Z"
+    description: ClickHouse is an open source column-oriented database management system capable of real time generation of analytical data reports using SQL queries
+    digest: b76091a702b6fc6287e475c8bcdacb893a429a114bf00a1a012af7ed001cc854
+    home: https://clickhouse.yandex/
+    icon: https://clickhouse.yandex/images/logo.png
+    keywords:
+    - clickhouse
+    - olap
+    - database
+    maintainers:
+    - email: 411934049@qq.com
+      name: liwenhe
+    name: clickhouse
+    sources:
+    - https://github.com/unstoppable/helm-charts/
+    urls:
+    - https://github.com/unstoppable/helm-charts/releases/download/clickhouse-1.0.3/clickhouse-1.0.3.tgz
+    version: 1.0.3
   - apiVersion: v1
     appVersion: "19.14"
     created: "2020-12-31T07:57:14.933665901Z"
