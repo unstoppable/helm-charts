@@ -71,7 +71,7 @@ spec:
         resources:
 {{ toYaml .Values.resources | indent 10 }}
         volumeMounts:
-        - name: binlog
+        - name: beanstalkd-data
           mountPath: /var/lib/beanstalkd
       {{- if .Values.metrics.enabled }}
       - name: {{ template "beanstalkd.fullname" . }}-metrics
@@ -84,10 +84,6 @@ spec:
         - name: metrics
           containerPort: 11301
       {{- end }}
-      volumes:
-      - name: binlog
-        persistentVolumeClaim:
-          claimName: beanstalkd-data
 
   volumeClaimTemplates:
     - kind: PersistentVolumeClaim
