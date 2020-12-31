@@ -87,4 +87,19 @@ spec:
       volumes:
       - name: binlog
         persistentVolumeClaim:
-          claimName: {{ template "beanstalkd.fullname" . }}
+          claimName: beanstalkd-data
+
+  volumeClaimTemplates:
+    - kind: PersistentVolumeClaim
+      apiVersion: v1
+      metadata:
+        name: beanstalkd-data
+      spec:
+        storageClassName: gp2
+        volumeMode: Filesystem
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 50Mi
+
