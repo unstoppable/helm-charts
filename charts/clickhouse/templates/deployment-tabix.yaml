@@ -35,7 +35,6 @@ spec:
     {{- range .Values.tabix.imagePullSecrets }}
       - name: {{ . | quote }}
     {{- end }}
-    {{- end }}
       containers: 
       - name: {{ include "clickhouse.name" . }}-tabix
         image: {{ .Values.tabix.image }}:{{ .Values.tabix.imageVersion }}
