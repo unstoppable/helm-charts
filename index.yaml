@@ -1,11 +1,11 @@
 apiVersion: v1
 entries:
   beanstalkd:
-  - appVersion: "1.10"
-    created: 2019-09-28T08:13:31.493169177+10:00
+  - apiVersion: v1
+    appVersion: "1.11"
+    created: "2020-12-31T07:52:27.560942248Z"
     description: Beanstalk is a simple, fast work queue.
-    digest: 400bb8283abb5e6a2b33269cfdfacbcdb3e53daa2332a9c20657ec351b842dd1
-    engine: gotpl
+    digest: 3132cba5a5b82ee02120c12711c782bca9a119d7a04c8d32a1919ea056f24192
     home: http://kr.github.io/beanstalkd/
     keywords:
     - beanstalkd
@@ -19,43 +19,6 @@ entries:
     - https://github.com/davidtannock/docker-beanstalkd
     - https://github.com/davidtannock/beanstalkd_exporter
     urls:
-    - //davidtannock.github.io/helm-charts/beanstalkd-1.1.1.tgz
+    - https://github.com/unstoppable/helm-charts/releases/download/beanstalkd-1.1.1/beanstalkd-1.1.1.tgz
     version: 1.1.1
-  - appVersion: "1.10"
-    created: 2019-09-28T08:13:31.492828878+10:00
-    description: Beanstalk is a simple, fast work queue.
-    digest: f2b5bb1c617ad5e7621a33986c3b97512267a5968d98e7c444f74927d332d478
-    engine: gotpl
-    home: http://kr.github.io/beanstalkd/
-    keywords:
-    - beanstalkd
-    - queue
-    - prometheus
-    - metrics
-    maintainers:
-    - name: David Tannock
-    name: beanstalkd
-    sources:
-    - https://github.com/davidtannock/docker-beanstalkd
-    - https://github.com/davidtannock/beanstalkd_exporter
-    urls:
-    - //davidtannock.github.io/helm-charts/beanstalkd-1.1.0.tgz
-    version: 1.1.0
-  - appVersion: "1.10"
-    created: 2019-09-28T08:13:31.492502384+10:00
-    description: Beanstalk is a simple, fast work queue.
-    digest: 478e460b1180b67be437dc59a8fa828775e4712c934caf2b63bbefee7c307b89
-    engine: gotpl
-    home: http://kr.github.io/beanstalkd/
-    keywords:
-    - beanstalkd
-    - queue
-    maintainers:
-    - name: David Tannock
-    name: beanstalkd
-    sources:
-    - https://github.com/davidtannock/docker-beanstalkd
-    urls:
-    - //davidtannock.github.io/helm-charts/beanstalkd-1.0.0.tgz
-    version: 1.0.0
-generated: 2019-09-28T08:13:31.492117777+10:00
+generated: "2020-12-31T07:52:27.198700055Z"
