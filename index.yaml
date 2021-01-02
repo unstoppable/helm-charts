@@ -225,6 +225,15 @@ entries:
   kafdrop:
   - apiVersion: v1
     appVersion: 3.x
+    created: "2021-01-02T06:15:52.530867636Z"
+    description: A Helm chart for Kafdrop
+    digest: 27ae9cb6674d115c670e5a62b0396204bc56c7b3ca73969661e8a7d34da621c7
+    name: kafdrop
+    urls:
+    - https://github.com/unstoppable/helm-charts/releases/download/kafdrop-0.1.1/kafdrop-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: 3.x
     created: "2021-01-02T06:10:46.724462504Z"
     description: A Helm chart for Kafdrop
     digest: 01165fa8bd7e892deb3fb84a2463d15992ede1c7233119338d005683f0456398
