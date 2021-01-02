@@ -6,7 +6,7 @@ image:
   pullPolicy: Always
 
 kafka:
-  brokerConnect: localhost:9092
+  brokerConnect: kafka.elastic.svc.cluster.local:9092
   properties: ""
   truststore: ""
   keystore: ""
@@ -17,7 +17,7 @@ kafka:
 host:
 
 jvm:
-  opts: ""
+  opts: "-Xms32M -Xmx64M"
 jmx:
   port: 8686
 
@@ -33,9 +33,8 @@ server:
 
 service:
   annotations: {}
-  type: NodePort
+  type: ClusterIp
   port: 9000
-  nodePort: 30900
 
 ingress:
   enabled: false
@@ -45,9 +44,9 @@ ingress:
   tls: []
 
 resources:
-  # limits:
-  #  cpu: 100m
-  #  memory: 128Mi
+  limits:
+   cpu: 100m
+   memory: 128Mi
   requests:
     cpu: 1m
     memory: 128Mi
