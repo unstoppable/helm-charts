@@ -222,4 +222,14 @@ entries:
     urls:
     - https://github.com/unstoppable/helm-charts/releases/download/clickhouse-1.0.2/clickhouse-1.0.2.tgz
     version: 1.0.2
+  kafdrop:
+  - apiVersion: v1
+    appVersion: 3.x
+    created: "2021-01-02T06:10:46.724462504Z"
+    description: A Helm chart for Kafdrop
+    digest: 01165fa8bd7e892deb3fb84a2463d15992ede1c7233119338d005683f0456398
+    name: kafdrop
+    urls:
+    - https://github.com/unstoppable/helm-charts/releases/download/kafdrop-0.1.0/kafdrop-0.1.0.tgz
+    version: 0.1.0
 generated: "2020-12-31T07:57:14.587679309Z"
